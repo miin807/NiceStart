@@ -65,7 +65,7 @@
         android:id="@+id/contra"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
+        android:layout_marginTop="0dp"
         android:orientation="horizontal"
         app:layout_constraintEnd_toEndOf="@id/guideLine3"
         app:layout_constraintStart_toStartOf="@id/guideLine2"
@@ -91,27 +91,25 @@
         </EditText>
 
     </com.google.android.material.textfield.TextInputLayout>
+
+
     <Button
         android:id="@+id/boton"
-        android:layout_width="0dp"
 
-        android:layout_height="60dp"
-        android:text="Login"
+        android:text="LOGIN"
         app:layout_constraintEnd_toEndOf="@id/guideLine3"
         app:layout_constraintStart_toStartOf="@id/guideLine2"
         app:layout_constraintTop_toBottomOf="@id/contra"
-
-        />
+        android:layout_marginTop="15dp"
+        style="@style/buttonflat" />
     <Button
         android:id="@+id/signup"
-        android:layout_width="0dp"
-
-        android:layout_height="60dp"
-        android:text="Signup"
+        android:onClick="AbrirSignup"
+        android:text="SIGN UP"
         app:layout_constraintEnd_toEndOf="@id/guideLine3"
         app:layout_constraintStart_toStartOf="@id/guideLine2"
         app:layout_constraintTop_toBottomOf="@id/boton"
-        />
+        style="@style/buttonoutlined" />
 
         <androidx.constraintlayout.widget.Guideline
             android:id="@+id/guideLine2"
