@@ -6,7 +6,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:background="@drawable/gradient"
-        tools:context="com.min.nicestart.Login">
+        tools:context="com.min.nicestart.Signup">
 
         <ImageView
             android:id="@+id/boy"
@@ -28,27 +28,27 @@
 
         </View>
 
-        <ImageView
-            android:id="@+id/logo"
-            android:layout_width="80dp"
-            android:layout_height="80dp"
-            android:layout_marginTop="48dp"
-            android:src="@drawable/estrellas"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
+<!--        <ImageView-->
+<!--            android:id="@+id/logo"-->
+<!--            android:layout_width="80dp"-->
+<!--            android:layout_height="80dp"-->
+<!--            android:layout_marginTop="48dp"-->
+<!--            android:src="@drawable/estrellas"-->
+<!--            app:layout_constraintEnd_toEndOf="parent"-->
+<!--            app:layout_constraintStart_toStartOf="parent"-->
+<!--            app:layout_constraintTop_toTopOf="parent"-->
 
-            >
+<!--            >-->
 
-        </ImageView>
+<!--        </ImageView>-->
         <com.google.android.material.textfield.TextInputLayout
             android:id="@+id/user"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_marginTop="48dp"
+            android:layout_marginTop="0dp"
             app:layout_constraintEnd_toEndOf="@id/guideLine3"
             app:layout_constraintStart_toStartOf="@id/guideLine2"
-            app:layout_constraintTop_toBottomOf="@id/logo"
+            app:layout_constraintTop_toTopOf="@id/main"
             app:startIconDrawable="@drawable/persona"
             >
             <EditText
@@ -91,36 +91,36 @@
             </EditText>
 
         </com.google.android.material.textfield.TextInputLayout>
-        <com.google.android.material.textfield.TextInputLayout
-            android:id="@+id/confirContra"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="0dp"
-            android:orientation="horizontal"
-            app:layout_constraintEnd_toEndOf="@id/guideLine3"
-            app:layout_constraintStart_toStartOf="@id/guideLine2"
-            app:layout_constraintTop_toBottomOf="@+id/contra"
-            app:passwordToggleEnabled="true"
+<!--        <com.google.android.material.textfield.TextInputLayout-->
+<!--            android:id="@+id/confirContra"-->
+<!--            android:layout_width="0dp"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginTop="0dp"-->
+<!--            android:orientation="horizontal"-->
+<!--            app:layout_constraintEnd_toEndOf="@id/guideLine3"-->
+<!--            app:layout_constraintStart_toStartOf="@id/guideLine2"-->
+<!--            app:layout_constraintTop_toBottomOf="@+id/contra"-->
+<!--            app:passwordToggleEnabled="true"-->
 
 
-            app:startIconDrawable="@drawable/contrase">
+<!--            app:startIconDrawable="@drawable/contrase">-->
 
-            <EditText
-                android:id="@+id/pass"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:alpha="0.6"
-                android:background="@color/blanco"
-                android:hint="Confirm Password"
-                android:inputType="textPassword"
-                android:maxLines="1"
+<!--            <EditText-->
+<!--                android:id="@+id/pass"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:alpha="0.6"-->
+<!--                android:background="@color/blanco"-->
+<!--                android:hint="Confirm Password"-->
+<!--                android:inputType="textPassword"-->
+<!--                android:maxLines="1"-->
 
 
-                >
+<!--                >-->
 
-            </EditText>
+<!--            </EditText>-->
 
-        </com.google.android.material.textfield.TextInputLayout>
+<!--        </com.google.android.material.textfield.TextInputLayout>-->
         <com.google.android.material.textfield.TextInputLayout
             android:id="@+id/mail"
             android:layout_width="0dp"
@@ -128,7 +128,7 @@
             android:layout_marginTop="0dp"
             app:layout_constraintEnd_toEndOf="@id/guideLine3"
             app:layout_constraintStart_toStartOf="@id/guideLine2"
-            app:layout_constraintTop_toBottomOf="@+id/confirContra"
+            app:layout_constraintTop_toBottomOf="@+id/contra"
 
             app:startIconDrawable="@drawable/mail">
 
@@ -150,16 +150,16 @@
 
         <Button
             android:id="@+id/signup"
-
+            android:onClick="AbrirMain"
             android:text="SIGN UP"
             app:layout_constraintEnd_toEndOf="@id/guideLine3"
             app:layout_constraintStart_toStartOf="@id/guideLine2"
             app:layout_constraintTop_toBottomOf="@id/mail"
-            android:layout_marginTop="15dp"
+            android:layout_marginTop="10dp"
             style="@style/buttonflat" />
         <Button
             android:id="@+id/cancel"
-
+            android:onClick="volverLogin"
             android:text="CANCEL"
             app:layout_constraintEnd_toEndOf="@id/guideLine3"
             app:layout_constraintStart_toStartOf="@id/guideLine2"

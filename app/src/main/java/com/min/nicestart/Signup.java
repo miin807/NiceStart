@@ -10,7 +10,7 @@ import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
-public class Singup extends AppCompatActivity {
+public class Signup extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -23,13 +23,13 @@ public class Singup extends AppCompatActivity {
             return insets;
         });
     }
-    public void VolverLogin(View view) {
-        Intent intent = new Intent(Singup.this,Login.class);
+    public void volverLogin(View view) {
+        Intent intent = new Intent(Signup.this,Login.class);
         startActivity(intent);
     }
 
     public void AbrirMain(View view) {
-        Intent intent = new Intent(Singup.this,Main.class);
+        Intent intent = new Intent(Signup.this,Main.class);
         startActivity(intent);
     }
 }

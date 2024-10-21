@@ -17,7 +17,7 @@
             android:exported="true"
             android:theme="@style/Theme.NiceStart.ActionBar" />
         <activity
-            android:name=".Singup"
+            android:name=".Signup"
             android:exported="true"
             android:parentActivityName=".Login"
             android:theme="@style/Theme.NiceStart.ActionBar" />
