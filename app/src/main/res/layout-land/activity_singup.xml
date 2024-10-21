@@ -9,9 +9,9 @@
         tools:context="com.min.nicestart.Login">
 
         <ImageView
-            android:id="@+id/girl"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:id="@+id/boy"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
             android:scaleType="centerCrop"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
@@ -150,7 +150,6 @@
 
         <Button
             android:id="@+id/signup"
-            android:onClick="AbrirMain"
 
             android:text="SIGN UP"
             app:layout_constraintEnd_toEndOf="@id/guideLine3"
@@ -160,7 +159,7 @@
             style="@style/buttonflat" />
         <Button
             android:id="@+id/cancel"
-            android:onClick="VolverLogin"
+
             android:text="CANCEL"
             app:layout_constraintEnd_toEndOf="@id/guideLine3"
             app:layout_constraintStart_toStartOf="@id/guideLine2"

@@ -1,6 +1,8 @@
 package com.min.nicestart;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
@@ -20,5 +22,14 @@ public class Singup extends AppCompatActivity {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;
         });
+    }
+    public void VolverLogin(View view) {
+        Intent intent = new Intent(Singup.this,Login.class);
+        startActivity(intent);
+    }
+
+    public void AbrirMain(View view) {
+        Intent intent = new Intent(Singup.this,Main.class);
+        startActivity(intent);
     }
 }
