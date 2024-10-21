@@ -6,7 +6,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:background="@drawable/gradient"
-        tools:context="com.min.nicestart.Login">
+        tools:context="com.min.nicestart.Singup">
 
         <ImageView
             android:id="@+id/girl"
@@ -23,7 +23,7 @@
             android:layout_height="match_parent"
             android:alpha="0.0"
             android:background="@color/amarillo"
-            tools:layout_editor_absoluteX="87dp"
+            tools:layout_editor_absoluteX="86dp"
             tools:layout_editor_absoluteY="0dp">
 
         </View>
@@ -160,7 +160,7 @@
             style="@style/buttonflat" />
         <Button
             android:id="@+id/cancel"
-            android:onClick="VolverLogin"
+            android:onClick="volverLogin"
             android:text="CANCEL"
             app:layout_constraintEnd_toEndOf="@id/guideLine3"
             app:layout_constraintStart_toStartOf="@id/guideLine2"
