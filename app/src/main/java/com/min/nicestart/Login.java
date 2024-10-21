@@ -10,8 +10,6 @@ import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
-import com.min.nicestart.R;
-
 public class Login extends AppCompatActivity {
 
     @Override
@@ -27,7 +25,7 @@ public class Login extends AppCompatActivity {
     }
     public void AbrirSignup (View v)
     {
-        Intent intent = new Intent(Login.this,Singup.class);
+        Intent intent = new Intent(Login.this, Signup.class);
         startActivity(intent);
     }
 
@@ -35,6 +33,5 @@ public class Login extends AppCompatActivity {
         Intent intent = new Intent(Login.this,Main.class);
         startActivity(intent);
     }
-
 
 }

@@ -6,7 +6,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:background="@drawable/gradient"
-        tools:context="com.min.nicestart.Singup">
+        tools:context="com.min.nicestart.Signup">
 
         <ImageView
             android:id="@+id/girl"
@@ -23,7 +23,7 @@
             android:layout_height="match_parent"
             android:alpha="0.0"
             android:background="@color/amarillo"
-            tools:layout_editor_absoluteX="86dp"
+            tools:layout_editor_absoluteX="87dp"
             tools:layout_editor_absoluteY="0dp">
 
         </View>
@@ -91,36 +91,36 @@
             </EditText>
 
         </com.google.android.material.textfield.TextInputLayout>
-        <com.google.android.material.textfield.TextInputLayout
-            android:id="@+id/confirContra"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="0dp"
-            android:orientation="horizontal"
-            app:layout_constraintEnd_toEndOf="@id/guideLine3"
-            app:layout_constraintStart_toStartOf="@id/guideLine2"
-            app:layout_constraintTop_toBottomOf="@+id/contra"
-            app:passwordToggleEnabled="true"
+<!--        <com.google.android.material.textfield.TextInputLayout-->
+<!--            android:id="@+id/confirContra"-->
+<!--            android:layout_width="0dp"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginTop="0dp"-->
+<!--            android:orientation="horizontal"-->
+<!--            app:layout_constraintEnd_toEndOf="@id/guideLine3"-->
+<!--            app:layout_constraintStart_toStartOf="@id/guideLine2"-->
+<!--            app:layout_constraintTop_toBottomOf="@+id/contra"-->
+<!--            app:passwordToggleEnabled="true"-->
 
 
-            app:startIconDrawable="@drawable/contrase">
+<!--            app:startIconDrawable="@drawable/contrase">-->
 
-            <EditText
-                android:id="@+id/pass"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:alpha="0.6"
-                android:background="@color/blanco"
-                android:hint="Confirm Password"
-                android:inputType="textPassword"
-                android:maxLines="1"
+<!--            <EditText-->
+<!--                android:id="@+id/pass"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:alpha="0.6"-->
+<!--                android:background="@color/blanco"-->
+<!--                android:hint="Confirm Password"-->
+<!--                android:inputType="textPassword"-->
+<!--                android:maxLines="1"-->
 
 
-                >
+<!--                >-->
 
-            </EditText>
+<!--            </EditText>-->
 
-        </com.google.android.material.textfield.TextInputLayout>
+<!--        </com.google.android.material.textfield.TextInputLayout>-->
         <com.google.android.material.textfield.TextInputLayout
             android:id="@+id/mail"
             android:layout_width="0dp"
@@ -128,7 +128,7 @@
             android:layout_marginTop="0dp"
             app:layout_constraintEnd_toEndOf="@id/guideLine3"
             app:layout_constraintStart_toStartOf="@id/guideLine2"
-            app:layout_constraintTop_toBottomOf="@+id/confirContra"
+            app:layout_constraintTop_toBottomOf="@+id/contra"
 
             app:startIconDrawable="@drawable/mail">
 
