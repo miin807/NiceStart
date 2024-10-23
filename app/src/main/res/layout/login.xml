@@ -14,9 +14,11 @@
         android:layout_height="match_parent"
         android:scaleType="centerCrop"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        android:src="@drawable/girl"
-        />
+        app:layout_constraintTop_toTopOf="parent">
+        <!--        android:src="@drawable/girl"-->
+    </ImageView>
+
+
 
     <View
         android:layout_width="match_parent"
