@@ -9,7 +9,7 @@
         tools:context="com.min.nicestart.Signup">
 
         <ImageView
-            android:id="@+id/girl"
+            android:id="@+id/boy"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:scaleType="centerCrop"
