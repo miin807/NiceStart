@@ -24,5 +24,13 @@ Os dejo el codigo que se haria en el Manifest de como se harían los actionBar.
 ![LandSignup](img/SignupLand.png)
 Así es como se vería el login y el sign up en horizontal, todo tendría las mismas
 funcionalidades como si estuviera en vertical.
+## Perfil:
+![Perfil](img/perfil.png)
+Una vez entrado registrado o habiendo hecho login, aparecerá la pestaña de
+perfil donde aparece tu nombre y apellido y la foto de perfil escogida.
 
+### Foto redonda:
+![codigoPerfil](img/codigoPerfil.png)
+Aquí está el codigo de como se haria lo de la foto de perfil y de como 
+dejarla circular
 
