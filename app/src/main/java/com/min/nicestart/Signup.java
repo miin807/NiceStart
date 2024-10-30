@@ -29,7 +29,7 @@ public class Signup extends AppCompatActivity {
     }
 
     public void AbrirMain(View view) {
-        Intent intent = new Intent(Signup.this,Main.class);
+        Intent intent = new Intent(Signup.this, Profile.class);
         startActivity(intent);
     }
 }

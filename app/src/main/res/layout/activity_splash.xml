@@ -6,7 +6,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".Splash"
-    android:background="@drawable/gradient">
+    android:background="@drawable/gradient"
+    >
     <ImageView
         android:id="@+id/fondo"
         android:layout_width="match_parent"
@@ -28,6 +29,7 @@
     </ImageView>
 
     <TextView
+        android:id="@+id/nombre"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:fontFamily="@font/alegreya_sc"

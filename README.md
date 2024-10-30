@@ -34,3 +34,8 @@ perfil donde aparece tu nombre y apellido y la foto de perfil escogida.
 Aquí está el codigo de como se haria lo de la foto de perfil y de como 
 dejarla circular
 
+## Pantalla de carga
+
+![pantalla_Carga](img/carga.png)
+Se ha añadido una pantalla de carga
+

@@ -1,7 +1,6 @@
 package com.min.nicestart;
 
 import android.content.Intent;
-import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageView;
@@ -50,7 +49,7 @@ public class Login extends AppCompatActivity {
     }
 
     public void AbrirMain(View view) {
-        Intent intent = new Intent(Login.this,Main.class);
+        Intent intent = new Intent(Login.this, Main.class);
         startActivity(intent);
     }
 
