@@ -36,6 +36,6 @@ dejarla circular
 
 ## Pantalla de carga
 
-![pantalla_Carga](.github/images/video3.mp4)
+https://github.com/user-attachments/assets/c9e00eae-bf65-4d55-ac94-1f1263eff72d
 Se ha añadido una pantalla de carga
 
