@@ -36,6 +36,6 @@ dejarla circular
 
 ## Pantalla de carga
 
-![pantalla_Carga](img/video3.mp4)
+![pantalla_Carga](.github/images/video3.mp4)
 Se ha añadido una pantalla de carga
 
