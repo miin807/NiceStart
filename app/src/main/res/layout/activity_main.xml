@@ -8,12 +8,27 @@
     android:background="@drawable/gradient"
     tools:context=".Main">
 
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        android:id="@+id/myswipe"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        />
 
-    <TextView
-        android:id="@+id/texto"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Holaaa"
-        tools:layout_editor_absoluteX="164dp"
-        tools:layout_editor_absoluteY="283dp" />
+    <WebView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/web"
+        >
+    </WebView>
+<!--    <TextView-->
+<!--        android:id="@+id/texto"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="Holaaa"-->
+<!--        tools:layout_editor_absoluteX="164dp"-->
+<!--        tools:layout_editor_absoluteY="283dp" />-->
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>

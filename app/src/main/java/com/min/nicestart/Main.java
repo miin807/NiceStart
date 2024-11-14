@@ -7,6 +7,7 @@ import android.view.ContextMenu;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.webkit.WebSettings;
 import android.webkit.WebView;
 import android.widget.ImageView;
 import android.widget.TextView;
@@ -19,21 +20,37 @@ import androidx.constraintlayout.widget.ConstraintSet;
 import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
+import androidx.swiperefreshlayout.widget.SwipeRefreshLayout;
 
 import com.bumptech.glide.Glide;
 import com.google.android.material.snackbar.Snackbar;
 
-public class Main extends AppCompatActivity {
+import org.w3c.dom.Text;
 
+public class Main extends AppCompatActivity {
+private WebView miVisorWeb;
+//private TextView textoo;
+private SwipeRefreshLayout swipeLayout;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         EdgeToEdge.enable(this);
         setContentView(R.layout.activity_main);
 
-        TextView mycontext=findViewById(R.id.texto);
+        WebView mycontext=findViewById(R.id.web);
         registerForContextMenu(mycontext);
+//        TextView textoo = findViewById(R.id.texto);
+//        registerForContextMenu(textoo);
+        swipeLayout = (SwipeRefreshLayout) findViewById(R.id.myswipe);
+        swipeLayout.setOnRefreshListener(mOnRefreshListener);
 
+        miVisorWeb = (WebView) findViewById(R.id.web);
+////        miVisorWeb.getSettings().setJavaScriptEnabled(true);
+////        miVisorWeb.getSettings().setBuiltInZoomControls(true);
+        WebSettings webSettings = miVisorWeb.getSettings();
+        webSettings.setLoadWithOverviewMode(true);
+        webSettings.setUseWideViewPort(true);
+        miVisorWeb.loadUrl("https://thispersondoesnotexist.com");
 
 
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
@@ -77,8 +94,8 @@ public class Main extends AppCompatActivity {
         int id=item.getItemId();//numero segun orden de creacion en xml
         if(id==R.id.item1)
         {
-            Intent intent = new Intent(Main.this, Profile.class);
-            startActivity(intent);
+            Toast toast = Toast.makeText(this, "Infecting", Toast.LENGTH_LONG);
+            toast.show();
         }
         if(id==R.id.item2)
         {
@@ -94,8 +111,43 @@ public class Main extends AppCompatActivity {
                     });
     snackbar.show();
         }
+        if (id == R.id.item3) {
+            Intent intent = new Intent(Main.this, Profile.class);
+            startActivity(intent);
+        }
+
+        if (id == R.id.item4) {
+            Intent intent = new Intent(this, Login.class);
+            startActivity(intent);
+        }
+
 
         return super.onOptionsItemSelected(item);
     }
 
+    //implementacion swipe refresh
+    protected SwipeRefreshLayout.OnRefreshListener
+            mOnRefreshListener = new SwipeRefreshLayout.OnRefreshListener() {
+        @Override
+        public void onRefresh() {
+           // Toast toast0 = Toast.makeText(Main.this, "Hi there! I don't exist :)", Toast.LENGTH_LONG);
+            //toast0.show();
+            final ConstraintLayout layout=findViewById(R.id.main);
+
+            Snackbar snackbar= Snackbar
+                    .make(layout,"Refreshing",Snackbar.LENGTH_LONG)
+                    .setAction("Action", new View.OnClickListener() {
+                        @Override
+                        public void onClick(View view) {
+                            Snackbar snackbar1 = Snackbar.make(layout,"Action is restored",Snackbar.LENGTH_LONG);
+                            snackbar1.show();
+                        }
+                    });
+
+            snackbar.show();
+
+            miVisorWeb.reload();
+            swipeLayout.setRefreshing(false);
+        }
+    };
 }

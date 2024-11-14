@@ -38,4 +38,15 @@ dejarla circular
 
 https://github.com/user-attachments/assets/c9e00eae-bf65-4d55-ac94-1f1263eff72d
 Se ha añadido una pantalla de carga
+## Pantalla Main
+![fotoMain](img/Main1.png)
+En la pantalla de Main se ha añadido un appbar con dos iconos con opciones,
+si le damos al icono de las 3 barras aparecerán las siguientes opciones:
+![fotoMain2](img/Main2.png)
+Existe la opción de ir al perfil del usuario y el de Signout que te llevará
+al Login del principio por si se quisiera cambiar de usuario o crear 
+una cuenta nueva
+
+
+
 
