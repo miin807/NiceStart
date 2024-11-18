@@ -2,7 +2,7 @@
     <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:app="http://schemas.android.com/apk/res-auto"
         xmlns:tools="http://schemas.android.com/tools"
-        android:id="@+id/main"
+        android:id="@+id/signup"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:background="@drawable/gradient"
@@ -149,7 +149,7 @@
         </com.google.android.material.textfield.TextInputLayout>
 
         <Button
-            android:id="@+id/signup"
+            android:id="@+id/login"
             android:onClick="AbrirMain"
 
             android:text="SIGN UP"
@@ -164,7 +164,7 @@
             android:text="CANCEL"
             app:layout_constraintEnd_toEndOf="@id/guideLine3"
             app:layout_constraintStart_toStartOf="@id/guideLine2"
-            app:layout_constraintTop_toBottomOf="@id/signup"
+            app:layout_constraintTop_toBottomOf="@id/login"
             style="@style/buttonoutlined" />
 
         <androidx.constraintlayout.widget.Guideline

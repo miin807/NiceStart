@@ -1,6 +1,6 @@
 package com.min.nicestart;
 
-import android.content.Context;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.ContextMenu;
@@ -9,23 +9,19 @@ import android.view.MenuItem;
 import android.view.View;
 import android.webkit.WebSettings;
 import android.webkit.WebView;
-import android.widget.ImageView;
-import android.widget.TextView;
 import android.widget.Toast;
 
 import androidx.activity.EdgeToEdge;
+import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.constraintlayout.widget.ConstraintLayout;
-import androidx.constraintlayout.widget.ConstraintSet;
 import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 import androidx.swiperefreshlayout.widget.SwipeRefreshLayout;
 
-import com.bumptech.glide.Glide;
+import com.google.android.material.dialog.MaterialAlertDialogBuilder;
 import com.google.android.material.snackbar.Snackbar;
-
-import org.w3c.dom.Text;
 
 public class Main extends AppCompatActivity {
 private WebView miVisorWeb;
@@ -117,8 +113,7 @@ private SwipeRefreshLayout swipeLayout;
         }
 
         if (id == R.id.item4) {
-            Intent intent = new Intent(this, Login.class);
-            startActivity(intent);
+            showAlertDailogButtonClicked(Main.this);
         }
 
 
@@ -150,4 +145,51 @@ private SwipeRefreshLayout swipeLayout;
             swipeLayout.setRefreshing(false);
         }
     };
+
+
+    public void showAlertDailogButtonClicked (Main main)
+    {
+        MaterialAlertDialogBuilder builder = new MaterialAlertDialogBuilder(this);
+
+        builder.setTitle("SOL");
+        builder.setMessage("¿Te gusta el sol ?");
+        builder.setIcon(R.drawable.sol);
+        builder.setCancelable(true);
+
+
+
+        builder.setPositiveButton("Log out", new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialog, int which) {
+                // do something like...
+                dialog.dismiss();
+                Intent intent = new Intent(Main.this, Login.class);
+                startActivity(intent);
+
+            }
+        });
+
+        builder.setNegativeButton("No hace nada", new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialog, int which) {
+
+                // do something like...
+
+                dialog.dismiss();
+            }
+        });
+
+        builder.setNeutralButton("Salir de la app", new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialog, int which) {
+
+                // do something like...
+                System.exit(0);//Sale correctamente de la app
+
+                //dialog.dismiss();
+            }
+        });
+        AlertDialog dialog = builder.create();
+        dialog.show();
+    }
 }

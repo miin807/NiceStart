@@ -30,7 +30,7 @@ public class Profile extends AppCompatActivity {
                 //  .placeholder(new ColorDrawable(this.getResources().getColor(R.color.amarillo)))
                 .into(foto);
 
-        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
+        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.profile), (v, insets) -> {
             Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;

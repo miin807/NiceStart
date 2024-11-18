@@ -36,7 +36,7 @@ public class Login extends AppCompatActivity {
                 //  .placeholder(new ColorDrawable(this.getResources().getColor(R.color.amarillo)))
                 .into(mGirl);
 
-        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
+        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.login), (v, insets) -> {
             Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;
