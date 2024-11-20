@@ -38,14 +38,43 @@ dejarla circular
 
 https://github.com/user-attachments/assets/c9e00eae-bf65-4d55-ac94-1f1263eff72d
 Se ha añadido una pantalla de carga
+
+#### Codigo Splash (Pantalla de carga)
+En mi caso he utilizado una url de internet, para que se pueda usar eso
+hay que ir al Manifest y ahi añadir el siguiente codigo :
+<uses-permission android:name="android.permission.INTERNET" />
+
+![fotoSplash](img/codigoSplash.png)
 ## Pantalla Main
 ![fotoMain](img/Main1.png)
-En la pantalla de Main se ha añadido un appbar con dos iconos con opciones,
+
+En la pantalla de Main se ha añadido un refresh donde cambia de foto
+cada vez que se haga y un appbar con dos iconos con opciones,
 si le damos al icono de las 3 barras aparecerán las siguientes opciones:
+
 ![fotoMain2](img/Main2.png)
+
 Existe la opción de ir al perfil del usuario y el de Signout que te llevará
 al Login del principio por si se quisiera cambiar de usuario o crear 
-una cuenta nueva
+una cuenta nueva.
+
+Si le damos a la opción del Signout
+![fotoMain3](img/Main3.png)
+Como se observa, al darle al botón de Signout, nos aparecen las 3 
+opciones siguientes
+
+## Codigo Refresh
+Este codigo es el que habria que escribir en el main para que se pueda
+hacer el refresh, pero para ellos habria que añadir una libreria externa
+ya que no esta incluida. la libreria es la siguiente:
+implementation("androidx.swiperefreshlayout:swiperefreshlayout:1.1.0")
+![fotoRefresh](img/CodigoMain2.png)
+
+## Codigo Signout
+Para este codigo hay que meter un builder con las opciones que se quiera
+añadir
+![codigoSignout](img/CodigoMain1.png)
+
 
 
 
