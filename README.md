@@ -66,7 +66,7 @@ opciones siguientes
 Para hacer el menu de opciones, se necesitaria este codigo, pero anteriormente hay que
 haber creado en un directorio menu las opciones del appbar para poder llamarlas desde
 el main de java, en dicho codigo faltaria el return que seria  return super.onOptionsItemSelected(item);
-y cerrar la llave del public boolean
+y cerrar la llave del public boolean.
 ![fotoMenu](img/CodigoMenu.png)
 ## Codigo Refresh
 Este codigo es el que habria que escribir en el main para que se pueda
