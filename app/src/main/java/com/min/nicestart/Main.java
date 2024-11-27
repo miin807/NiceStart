@@ -103,7 +103,6 @@ private SwipeRefreshLayout swipeLayout;
                         public void onClick(View view) {
                             Toast.makeText(Main.this, "Action is restaured", Toast.LENGTH_SHORT).show();
                         }
-
                     });
     snackbar.show();
         }
@@ -115,7 +114,6 @@ private SwipeRefreshLayout swipeLayout;
         if (id == R.id.item4) {
             showAlertDailogButtonClicked(Main.this);
         }
-
 
         return super.onOptionsItemSelected(item);
     }

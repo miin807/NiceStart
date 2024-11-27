@@ -62,7 +62,12 @@ Si le damos a la opción del Signout
 ![fotoMain3](img/Main3.png)
 Como se observa, al darle al botón de Signout, nos aparecen las 3 
 opciones siguientes
-
+## Codigo del menu de opciones
+Para hacer el menu de opciones, se necesitaria este codigo, pero anteriormente hay que
+haber creado en un directorio menu las opciones del appbar para poder llamarlas desde
+el main de java, en dicho codigo faltaria el return que seria  return super.onOptionsItemSelected(item);
+y cerrar la llave del public boolean
+![fotoMenu](img/CodigoMenu.png)
 ## Codigo Refresh
 Este codigo es el que habria que escribir en el main para que se pueda
 hacer el refresh, pero para ellos habria que añadir una libreria externa
