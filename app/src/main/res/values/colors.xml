@@ -2,10 +2,10 @@
 <resources>
     <color name="black">#FF000000</color>
     <color name="blanco">#F8F8F8</color>
-    <color name="rosa">#F06A8A</color>
-    <color name="azul">#8FBDDF</color>
-    <color name="amarillo">#FAE360</color>
-    <color name="naranja">#F48E35</color>
+    <color name="pink">#FD91AF</color>
+    <color name="azul">#63C5DA</color>
+    <color name="amarillo">#FFF44F</color>
+    <color name="naranja">#FC6A05</color>
 
 
 </resources>
