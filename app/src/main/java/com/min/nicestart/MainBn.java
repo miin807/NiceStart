@@ -46,12 +46,12 @@ public class MainBn extends AppCompatActivity {
 //                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
 //                        .setAction("Action", null).show();
 //            }
-    }
-}
+//    }
+// }
 
 
 // cast al xml
-//        BottomNavigationView mybottomNavView = findViewById(R.id.bottom_navigation);
+       BottomNavigationView mybottomNavView = findViewById(R.id.bottom_navigation);
 
 //        // crear badges
 //        BottomNavigationMenuView bottomNavigationMenuView =
@@ -104,28 +104,28 @@ public class MainBn extends AppCompatActivity {
 
 //        here we listen to viewpager moves and set navigations items checked or not
 
-//        viewPager1.addOnPageChangeListener(new ViewPager.OnPageChangeListener() {
-//            @Override
-//            public void onPageScrolled(int position, float positionOffset, int positionOffsetPixels) {
-//
-//            }
+        viewPager1.addOnPageChangeListener(new ViewPager.OnPageChangeListener() {
+            @Override
+            public void onPageScrolled(int position, float positionOffset, int positionOffsetPixels) {
 
-//            @Override
-//            public void onPageSelected(int position) {
-//                if (prevMenuItem != null) {
-//                    prevMenuItem.setChecked(false);
-//                } else {
-//                    mybottomNavView.getMenu().getItem(0).setChecked(false);
-//                    mybottomNavView.getMenu().getItem(position).setChecked(true);
-//                    removeBadge(mybottomNavView, mybottomNavView.getMenu().getItem(position).getItemId());
-//                }
-//            }
-//
-//            @Override
-//            public void onPageScrollStateChanged(int state) {
-//
-//            }
-//        });
+            }
+
+            @Override
+            public void onPageSelected(int position) {
+                if (prevMenuItem != null) {
+                    prevMenuItem.setChecked(false);
+                } else {
+                    mybottomNavView.getMenu().getItem(0).setChecked(false);
+                    mybottomNavView.getMenu().getItem(position).setChecked(true);
+                    // removeBadge(mybottomNavView, mybottomNavView.getMenu().getItem(position).getItemId());
+                }
+            }
+
+            @Override
+            public void onPageScrollStateChanged(int state) {
+
+            }
+        });
 //
 //    }
 
@@ -142,3 +142,5 @@ public class MainBn extends AppCompatActivity {
 //            itemView.removeViewAt(2);
 //        }
 //    }
+    }
+}
