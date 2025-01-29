@@ -54,7 +54,7 @@ si le damos al icono de las 3 barras aparecerán las siguientes opciones:
 
 ![fotoMain2](img/Main2.png)
 
-Existe la opción de ir al perfil del usuario y el de Signout que te llevará
+Existe la opción de ir al perfil del usuario,el MainBab, MainBn y el de Signout que te llevará
 al Login del principio por si se quisiera cambiar de usuario o crear 
 una cuenta nueva.
 
@@ -79,6 +79,33 @@ implementation("androidx.swiperefreshlayout:swiperefreshlayout:1.1.0")
 Para este codigo hay que meter un builder con las opciones que se quiera
 añadir
 ![codigoSignout](img/CodigoMain1.png)
+
+
+## Pantalla Mainbab
+![fotoMainbab](img/Mainbab.png)
+Como se observa, sale un menu abajo del todo con las opciones que se
+quieran añadir, también se puede ver que hay un botón en el medio del menu
+con hondulación.
+
+
+## Codigo Mainbab
+A parte de escribir el codigo, se debería de crear un xml antes.        
+En el codigo se ve la funcionalidad que hace al darle a cada botón.
+![codigoMainbab](img/Mainbab1.png)
+![codigoMainbab2](img/Mainbab2.png)
+
+## Pantalla Mainbn
+En este caso, el mainbn es la barra de navgeacion que hay abajo también,
+esta compuesto en este caso por 4 fragments, existe la opción de 
+deslizar o a derecha o izquierda y cada vez que se deslice cambia de
+fragment y se posiciona en un icono diferente
+![fotoMainbn](img/Mainbn.png)
+![fotoMainbn2](img/Mainbn2.png)
+
+## Codigo Mainbn
+Con este codigo se podria hacer todo el mainbn.
+![codigoMainbn](img/Mainbn1.png)
+
 
 
 

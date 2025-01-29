@@ -114,7 +114,14 @@ private SwipeRefreshLayout swipeLayout;
         if (id == R.id.item4) {
             showAlertDailogButtonClicked(Main.this);
         }
-
+        if (id == R.id.item5) {
+            Intent intent = new Intent(Main.this, MainBab.class);
+            startActivity(intent);
+        }
+        if (id == R.id.item6) {
+            Intent intent = new Intent(Main.this, MainBn.class);
+            startActivity(intent);
+        }
         return super.onOptionsItemSelected(item);
     }
 

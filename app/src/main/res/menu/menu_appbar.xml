@@ -28,6 +28,14 @@
             android:title="Signout"
             app:showAsAction="never"
             android:icon="@drawable/logout"/>
+        <item
+            android:id="@+id/item5"
+            android:title="MenuBab"
+            app:showAsAction="never" />
+        <item
+            android:id="@+id/item6"
+            android:title="MenuBn"
+            app:showAsAction="never" />
 
     </menu>
     </item>
