@@ -33,7 +33,10 @@ perfil donde aparece tu nombre y apellido y la foto de perfil escogida.
 ![codigoPerfil](img/codigoPerfil.png)
 Aquí está el codigo de como se haria lo de la foto de perfil y de como 
 dejarla circular
-
+## Modo oscuro:
+![modo](img/modo_oscuro.png)
+![oscuro](img/oscuro2.png)
+En caso de tener el móvil en modo oscuro, se vería así.
 ## Pantalla de carga
 
 https://github.com/user-attachments/assets/c9e00eae-bf65-4d55-ac94-1f1263eff72d
