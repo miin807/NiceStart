@@ -83,7 +83,7 @@
             android:layout_height="wrap_content"
             android:alpha="0.6"
             android:background="@color/blanco"
-            android:hint="@string/Password"
+            android:hint="@string/password"
             android:inputType="textPassword"
             android:maxLines="1"
 
@@ -98,7 +98,7 @@
     <Button
         android:id="@+id/boton"
         android:onClick="AbrirMain"
-        android:text="LOGIN"
+        android:text="@string/login"
         app:layout_constraintEnd_toEndOf="@id/guideLine3"
         app:layout_constraintStart_toStartOf="@id/guideLine2"
         app:layout_constraintTop_toBottomOf="@id/contra"
@@ -107,7 +107,7 @@
     <Button
         android:id="@+id/loginn"
         android:onClick="AbrirSignup"
-        android:text="SIGN UP"
+        android:text="@string/sign_up"
         app:layout_constraintEnd_toEndOf="@id/guideLine3"
         app:layout_constraintStart_toStartOf="@id/guideLine2"
         app:layout_constraintTop_toBottomOf="@id/boton"

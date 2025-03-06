@@ -37,6 +37,16 @@ dejarla circular
 ![modo](img/modo_oscuro.png)
 ![oscuro](img/oscuro2.png)
 En caso de tener el móvil en modo oscuro, se vería así.
+
+## Idiomas:
+![idioma1](img/espaniol.png)
+Idioma en español
+![idioma2](img/login.png)
+Idioma en inglés
+
+Para ello solo haría falta crear un fichero xml dentro de la carpeta string, 
+ahi existirán en este caso 2 carpetas, uno con el idioma en español y el otro
+en inglés
 ## Pantalla de carga
 
 https://github.com/user-attachments/assets/c9e00eae-bf65-4d55-ac94-1f1263eff72d
